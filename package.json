@@ -65,5 +65,10 @@
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=5.0.0"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "jquery-validation": "^1.19.5",
+    "swiper": "^8.3.1"
   }
 }

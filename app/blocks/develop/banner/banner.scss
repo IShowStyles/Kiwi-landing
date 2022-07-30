@@ -1,0 +1,334 @@
+.banner {
+	padding: 10rem 0 4.4rem 0;
+
+	&-inner {
+		position: relative;
+	}
+
+	&-steps {
+		position: absolute;
+		left: -15rem;
+		top: 15%;
+
+		& > * {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&-dashed {
+		width: 40.3rem;
+		height: 30.2rem;
+		position: absolute;
+		right: -30%;
+		top: -3rem;
+
+		& > * {
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&-top___text {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2.4rem;
+
+		&-line {
+			margin-right: 1rem;
+		}
+
+		&-subtitle {
+			@extend %roboto-700;
+			color: $green-600;
+			font-size: 1.4rem;
+			line-height: 1.6rem;
+			letter-spacing: 0.25em;
+			text-transform: uppercase;
+		}
+	}
+
+	&-bottom {
+		&__title {
+			& > h3 {
+				display: inline-block;
+				@extend %bebasneue-700;
+				font-size: 9.6rem;
+				line-height: 9.6rem;
+				color: #000;
+				width: 100%;
+			}
+		}
+		&__subtitle{
+			&  > span {
+				@extend %galada-400;
+				text-transform: inherit;
+				font-size: 7.2rem;
+				line-height: 11.7rem;
+				justify-content: flex-end;
+				display: flex;
+				background: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+		}
+		&__img{
+			display: none;
+		}
+	}
+
+	&-dashed {
+		width: 29.3rem;
+		height: 28.2rem;
+		position: absolute;
+		right: -20%;
+		top: -3rem;
+	}
+
+	&-steps {
+		width: 12.3rem;
+		height: 10.3rem;
+	}
+}
+
+@media (max-width: 1680px) {
+	.container {
+		max-width: 114rem;
+	}
+
+	.banner {
+		&-bottom{
+			&__title {
+				& > h3 {
+					font-size: 8.5rem;
+					line-height: 8.5rem;
+					width: 90%;
+				}
+			}
+			&__subtitle{
+				& > span {
+					font-size: 68px;
+				}
+			}
+
+		}
+
+		&-dashed {
+			transform: rotate(190deg) scale(-1, 1);
+			right: -17%;
+			top: -5.5rem;
+			width: 35rem;
+			height: 30rem;
+		}
+
+		&-steps {
+			width: 9.3rem;
+			height: 6.3rem;
+			left: -10rem;
+			top: 25%;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.container {
+		max-width: 110rem;
+	}
+
+	.banner {
+		&-top___text {
+			margin-bottom: 2rem;
+		}
+
+		&-bottom {
+			&__title{
+				& > h3 {
+					font-size: 8.8rem;
+					line-height: 8.8rem;
+				}
+			}
+			&__subtitle{
+				& > span {
+					font-size: 6.8rem;
+					line-height: 10.2rem;
+				}
+			}
+		}
+
+		&-dashed {
+			display: none;
+		}
+
+		&-steps {
+			display: none;
+		}
+	}
+}
+
+@media(max-width: 1366px) {
+
+	.container {
+		max-width: 110rem;
+	}
+
+	.banner {
+		&-top___text {
+			margin-bottom: 2rem;
+		}
+
+		&-bottom {
+			&__title{
+				width: 100%;
+				& > h3 {
+					font-size: 7.5rem;
+					line-height: 7.5rem;
+				}
+			}
+			&__subtitle{
+				& > span {
+					font-size: 6rem;
+					line-height: 7rem;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 1280px) {
+	.container {
+		max-width: 100rem;
+	}
+
+	.banner {
+		&-bottom {
+			&__title{
+				& > h3 {
+					font-size: 7.4rem;
+					line-height: 7.4rem;
+				}
+			}
+			&__subtitle{
+				& > span {
+					font-size: 5.5rem;
+					line-height: 7rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.container {
+		max-width: 90rem;
+	}
+
+	.banner {
+		&-top___text {
+			padding-left: 12rem;
+			margin-right: 0.8rem;
+		}
+		&-bottom{
+			&__title{
+				display: flex;
+				justify-content: center;
+				& > h3{
+				text-align: center;
+				font-size: 5.8rem;
+				line-height: 5.8rem;
+			}
+
+			}
+			&__subtitle{
+				& > span{
+					font-size: 4.5rem;
+					line-height: 6rem;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 768px){
+	.container {
+		max-width: 71rem;
+	}
+
+	.banner {
+		&-top___text {
+			display: flex;
+			flex-direction: column;
+			padding-left: 0;
+			margin-right: 0;
+			&-line{
+				margin-bottom: 1.5rem;
+			}
+		}
+		&-bottom{
+			&__wrap{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			&__title{
+				& > h3{
+					width: 100%;
+					font-size: 3.2rem;
+					line-height: 3.2rem;
+				}
+			}
+			&__subtitle{
+				& > span{
+					width: 107%;
+					justify-content: center;
+					text-align: center;
+					font-size: 2.6rem;
+					line-height: 4.2rem;
+				}
+			}
+			&__img{
+				display: block;
+				width: 7.6rem;
+				height: 7.6rem;
+				& > img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 666px){
+	.container {
+		max-width: 57.6rem;
+	}
+
+	.banner {
+		&-top___text {
+			&-line{
+				margin-bottom: 1rem;
+			}
+		}
+		&-bottom{
+			&__title{
+				& > h3{
+					width: 100%;
+					font-size: 3.2rem;
+					line-height: 3.2rem;
+				}
+			}
+			&__subtitle{
+				& > span{
+					justify-content: center;
+					text-align: center;
+					font-size: 2.6rem;
+					line-height: 4.2rem;
+				}
+			}
+		}
+	}
+}

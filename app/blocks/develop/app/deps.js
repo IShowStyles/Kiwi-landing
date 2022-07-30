@@ -7,7 +7,7 @@ module.exports = {
 
 	modules: [
 		{
-			import: 'normalize.css'
+			inject: 'media.scss'
 		}
 	],
 

@@ -1,0 +1,120 @@
+.proposition{
+	padding: 100px 0;
+	&-inner{
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 5rem;
+	}
+	&-card{
+		max-width: 28.2rem;
+		display: flex;
+		flex-direction: column;
+		&__wrap{
+			margin-bottom: 4rem;
+			& > .proposition-card__wrap-inner{
+				height: 20rem;
+				z-index: 11;
+				overflow: visible;
+				position: relative;
+				& > img {
+					height: 20rem;
+				}
+			}
+			&-left{
+				& > * {
+					right: 2.7rem;
+				}
+			}
+			&-right{
+				& > * {
+					left: 1.2rem;
+				}
+			}
+			& > picture {
+				display: block;
+				& > img{
+					width: 100%;
+					object-fit:contain;
+				}
+			}
+
+		}
+		&__text{
+			height: 7rem;
+			& > p {
+				text-align: center;
+				@extend %roboto-400;
+				font-size: 1.6rem;
+				color: $gray;
+				line-height: 150%;
+				height: 100%;
+			}
+		}
+		&__title{
+			margin-bottom: 2rem;
+			& > *{
+				display: block;
+				text-align: center;
+				@extend %bebasneue-700;
+				font-size: 2.4rem;
+				line-height: 24px;
+				letter-spacing: 0.05em;
+			}
+		}
+	}
+	&-title{
+		display: block;
+		text-align: center;
+		margin-bottom: 4rem;
+		& > * {
+			@extend %bebasneue-700;
+			font-size: 4.8rem;
+			line-height: 48px;
+		}
+	}
+	&-btn{
+		border-radius: 50px;
+		padding: 2.2rem 8.4rem 1.9rem;
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		max-width: 28rem;
+		text-transform: uppercase;
+		background-color: $green-600;
+		& > * {
+			@extend %bebasneue-700;
+			font-size: 2.9rem;
+			line-height: 2.9rem;
+			color: $white;
+		}
+	}
+	&-line{
+		display: flex;
+		flex-basis:100% ;
+		background: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);
+		width: 90px;
+		height: 1px;
+		&__wrap{
+			display: none;
+			position: relative;
+			padding-top: 30px;
+		}
+		&__img{
+			display: flex;
+			justify-content: center;
+		}
+		&__left{
+			position: absolute;
+			left: -6.2rem;
+			bottom: 0.4rem;
+		}
+		&__right{
+			position: absolute;
+			right: -6.2rem;
+			bottom: 0.4rem;
+		}
+	}
+}

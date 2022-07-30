@@ -1,46 +1,28 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="MobileOptimized" content="width">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="format-detection" content="address=no">
-		<title>Hello</title>
-		<meta name="description" content="Simple demo app.">
-		<!-- BEMGO:styles -->
-		<!-- BEMGO:favicons -->
-	</head>
-	<body>
-		<div class="app app_no_js">
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>KIWI | Eco Boxes</title>
+	<!-- BEMGO:styles -->
+</head>
+<body>
+@@include( '../blocks/develop/header/header.html')
+<main>
+	<!--	@@include( '../blocks/develop/proposition/proposition.html')-->
+	<!--	@@include( '../blocks/develop/offer/offer.html')-->
+<!--		@@include( '../blocks/develop/banner/banner.html')-->
+<!--		@@include( '../blocks/develop/posts/posts.html')-->
+	<!--	@@include( '../blocks/develop/blog/blog.html')-->
+<!--		@@include( '../blocks/develop/form/form.html')-->
+<!--	@@include( '../blocks/develop/reviews/reviews.html')-->
+</main>
+<!--	@@include( '../blocks/develop/footer/footer.html')-->
+<!--@@include( '../blocks/develop/modal/modal.html')-->
 
-			<!-- BEMGO:symbol -->
 
-			@@include( 'develop/header/header.html', {
-				"slogan": "Hello everyone!"
-			})
-
-			<main class="content">
-				<div class="app__layout">
-					<div class="content__cards">
-						@@for (var i = 0; i < global.jsons.content.cards.length; i++) {
-
-							@@include( 'develop/card/card.html', {
-								"title": "`+global.jsons.content.cards[i].title+`",
-								"image": "`+global.jsons.content.cards[i].image+`",
-								"rating": "`+global.jsons.content.cards[i].rating+`",
-								"description": "`+global.jsons.content.cards[i].description+`"
-							})
-						}
-					</div>
-				</div>
-			</main>
-
-			@@include( 'develop/footer/footer.html' )
-
-		</div>
-		<!-- BEMGO:scripts -->
-	</body>
+<!-- BEMGO:scripts -->
+</body>
 </html>

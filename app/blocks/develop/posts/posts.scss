@@ -1,0 +1,164 @@
+.posts {
+	padding: 10rem 0;
+	background-color: $green-100;
+
+	&-top__text {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 5rem;
+
+		&-subtitle {
+			@extend %roboto-400;
+			color: $green-600;
+			font-size: 1.4rem;
+			line-height: 1.6rem;
+			letter-spacing: 0.25em;
+			margin-bottom: 2rem;
+		}
+
+		&-title {
+			& > h3 {
+				@extend %bebasneue-700;
+				color: $black;
+				font-size: 4.8rem;
+				line-height: 4.8rem;
+			}
+		}
+	}
+
+	&-inner {
+		display: grid;
+		grid-gap: .9rem;
+		justify-content: center;
+		grid-template-areas:
+			"post-block-1 post-block-2 post-block-lg post-block-7"
+			"post-block-3 post-block-4 post-block-lg post-block-8";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, minmax(1fr, 22rem)) 48.7rem minmax(1fr, 22rem);
+
+	}
+
+	&-block {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		& > img {
+			display: block;
+			max-width: 23.9rem;
+			height: 23.9rem;
+		}
+
+		&__left {
+			position: relative;
+			grid-area: post-block-1;
+			width: 100%;
+			height: 23.9rem;
+
+			& > picture > img {
+				display: block;
+				max-width: 23.9rem;
+				max-height: 23.9rem;
+			}
+		}
+
+		&__right {
+			position: relative;
+			grid-area: post-block-7;
+			width: 100%;
+			height: 23.9rem;
+
+			& > picture > img {
+				display: block;
+				max-width: 23.9rem;
+				max-height: 23.9rem;
+			}
+		}
+
+		&__large {
+			grid-area: post-block-lg;
+			width: 100%;
+			height: 100%;
+
+			& > img {
+				max-width: 47.7rem;
+				height: 48.7rem;
+			}
+		}
+
+		&-eight {
+			grid-area: post-block-8;
+			width: 100%;
+			height: 100%;
+
+			& > img {
+				max-width: 23.3rem;
+				height: 23.3rem;
+			}
+		}
+
+		&-two {
+			grid-area: post-block-2;
+		}
+
+		&-three {
+			grid-area: post-block-3;
+		}
+
+		&__circle {
+			&-left {
+				width: 6.6rem;
+				height: 6.6rem;
+				position: absolute;
+				top: -2.3rem;
+				left: -1.7rem;
+				&::before{
+					position: absolute;
+					@extend %bebasneue-700;
+					content: "Instagram";
+					text-transform: uppercase;
+					font-size: 12.5rem;
+					line-height: 12.5rem;
+					color:#ffffff;
+					opacity: 0.5;
+					transform: rotate(90deg);
+					right: -15.8rem;
+					bottom: -30rem;
+				}
+			}
+
+			&-right {
+				width: 4.9rem;
+				height: 4.9rem;
+				display: block;
+				position: absolute;
+				top: -2.5rem;
+				right: -2rem;
+				z-index: 3;
+				& > img {
+					object-fit: cover;
+					width: 4.9rem;
+					height: 4.9rem;
+				}
+			}
+		}
+
+		&__img {
+			&-left {
+				& > img {
+					max-width: 23.9rem;
+					max-height: 23.9rem;
+				}
+			}
+
+			&-right {
+				position: relative;
+				z-index: 11;
+				& > img {
+					max-width: 23.9rem;
+					max-height: 23.9rem;
+				}
+			}
+		}
+	}
+}

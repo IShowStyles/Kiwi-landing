@@ -1,0 +1,285 @@
+.blog{
+	padding: 100px 0;
+	&-title{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5rem;
+		& > h5{
+			@extend %bebasneue-700;
+			font-size: 4.8rem;
+			line-height: 4.8rem;
+			color: #000;
+		}
+	}
+	&-inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-card{
+		border: 1px solid $green-100;
+		max-width: 38.7rem;
+		height: 53.1rem;
+		&__img{
+			height: 21.8rem;
+			width: 100%;
+			& > img{
+				height: 100%;
+				width: 100%;
+			}
+		}
+		&__title{
+			margin-bottom: 4.2rem;
+			& > * {
+				@extend %bebasneue-700;
+				font-size: 2.4rem;
+				line-height: 2.4rem;
+				letter-spacing: 0.05em;
+
+			}
+			&--mb{
+				margin-bottom: 2.4rem;
+			}
+		}
+		&__text{
+			margin-bottom: 3.7rem;
+			& > p {
+				@extend %roboto-400;
+				color: $gray;
+				font-size: 1.4rem;
+				line-height: 150%;
+			}
+		}
+		&__line{
+			width: 6.0rem;
+			height: .7rem;
+			margin-bottom: 3rem;
+			& > img{
+				display: block;
+				object-fit: contain;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&__link{
+			border-radius: 5rem;
+			padding: .8rem 2rem;
+			background-color: $green-600;
+			& > span{
+				@extend %roboto-400;
+				font-size: 1.2rem;
+				line-height: 1.4rem;
+				color: $white;
+				letter-spacing: 0.05em;
+				text-transform:uppercase;
+			}
+			&-wrap{
+				display: flex;
+				width: 100%;
+				justify-content: flex-end;
+			}
+		}
+		&__wrap{
+			max-width: 100%;
+			padding: 4.2rem 4rem 4rem 4rem;
+		}
+	}
+}
+
+@media(max-width: 1680px) {
+	.container {
+		max-width: 114rem;
+	}
+
+	.blog{
+		&-title{
+			margin-bottom: 4.6rem;
+			& > h5 {
+				font-size: 4rem;
+			}
+		}
+		&-card{
+			max-width: 35.5rem;
+			height: 51.1rem;
+			&__wrap{
+				padding: 4rem 3.8rem 3.3rem 3.8rem;
+			}
+			&__title{
+				margin-bottom: 4rem;
+				& > *{
+					font-size: 2.2rem;
+					line-height: 2.2rem;
+				}
+				&--mb{
+					margin-bottom: 2.3rem;
+				}
+			}
+			&__text {
+				margin-bottom: 3.4rem;
+			}
+			&__link{
+				padding: .6rem 1.9rem;
+			}
+		}
+	}
+}
+
+
+@media(max-width: 1440px) {
+	.container {
+		max-width: 110rem;
+	}
+
+	.blog {
+		&-title {
+			margin-bottom: 4.2rem;
+			& > h5 {
+				font-size: 4rem;
+			}
+		}
+
+		&-card {
+			max-width: 33.5rem;
+			&__wrap{
+				padding: 3.8rem 3.8rem 3.1rem 3.5rem;
+			}
+			&__title{
+				margin-bottom: 3.8rem;
+				&--mb{
+					margin-bottom: 2rem;
+				}
+			}
+
+		}
+	}
+}
+
+@media(max-width: 1366px) {
+	.container {
+		max-width: 105rem;
+	}
+
+	.blog{
+		&-title {
+			margin-bottom: 4rem;
+			& > h5 {
+				font-size: 3.8rem;
+			}
+		}
+
+		&-card{
+			height: 51.1rem;
+			max-width: 32.5rem;
+			&__wrap{
+				padding: 3.4rem 3.1rem 2.8rem 3.3rem;
+			}
+		}
+	}
+}
+
+@media(max-width: 1280px) {
+
+	.container {
+		max-width: 100rem;
+	}
+
+	.blog{
+		&-title {
+			& > h5 {
+				font-size: 3.6rem;
+			}
+		}
+		&-card{
+			height: 50.1rem;
+			max-width: 30.5rem;
+			&__wrap{
+				padding: 3.4rem 3.1rem 2.8rem 3.3rem;
+			}
+			&__title{
+				& > * {
+					font-size: 1.8rem;
+					line-height: 1.8rem;
+				}
+			}
+			&__img{
+				height:19.7rem;
+			}
+		}
+	}
+}
+
+
+@media(max-width: 1024px) {
+	.container {
+		max-width: 90rem;
+	}
+
+	.blog{
+		&-title{
+			margin-bottom: 3.2rem;
+		}
+		&-inner{
+			flex-direction: column;
+		}
+		&-card{
+			max-width: 50%;
+			&:not(:last-child){
+				margin-bottom: 2.3rem;
+			}
+			&__img{
+				height: 22.8rem;
+			}
+			&__title {
+				margin-bottom: 3rem;
+				&> * {
+					font-size: 2.2rem;
+					line-height: 2.2rem;
+				}
+				&--mb{
+					margin-bottom: 1.3rem;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.container {
+		max-width: 71rem;
+	}
+
+	.blog{
+		&-inner{
+			flex-direction: column;
+			margin-bottom: 3rem;
+		}
+		&-card{
+			max-width: 33rem;
+			&:not(:last-child){
+				margin-bottom: 2.3rem;
+			}
+		}
+	}
+}
+
+
+@media(max-width: 666px) {
+	.container {
+		max-width: 57.6rem;
+	}
+
+	.blog{
+		&-inner{
+			flex-direction: row;
+			padding-right: 1rem;
+		}
+		&-card{
+			max-width: 95%;
+			height: 51rem;
+			&:not(:last-child){
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
