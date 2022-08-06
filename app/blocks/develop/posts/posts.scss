@@ -22,7 +22,7 @@
 				@extend %bebasneue-700;
 				color: $black;
 				font-size: 4.8rem;
-				line-height: 4.8rem;
+				line-height: 100%;
 			}
 		}
 	}
@@ -34,19 +34,19 @@
 		grid-template-areas:
 			"post-block-1 post-block-2 post-block-lg post-block-7"
 			"post-block-3 post-block-4 post-block-lg post-block-8";
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, minmax(1fr, 22rem)) 48.7rem minmax(1fr, 22rem);
+		grid-template-columns:repeat(2,minmax(1fr,19rem)) 2fr minmax(1fr,19rem);
+		grid-template-rows:repeat(2, 1fr);
 
 	}
 
 	&-block {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		width: 23.9rem;
+		height: 23.9rem;
 		& > img {
 			display: block;
-			max-width: 23.9rem;
-			height: 23.9rem;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 
 		&__left {
@@ -77,12 +77,12 @@
 
 		&__large {
 			grid-area: post-block-lg;
-			width: 100%;
-			height: 100%;
-
+			max-width: 47.7rem;
+			height: 48.7rem;
 			& > img {
-				max-width: 47.7rem;
-				height: 48.7rem;
+
+				width: 100%;
+				height: 100%;
 			}
 		}
 
@@ -112,14 +112,15 @@
 				position: absolute;
 				top: -2.3rem;
 				left: -1.7rem;
-				&::before{
+
+				&::before {
 					position: absolute;
 					@extend %bebasneue-700;
 					content: "Instagram";
 					text-transform: uppercase;
 					font-size: 12.5rem;
-					line-height: 12.5rem;
-					color:#ffffff;
+					line-height: 100%;
+					color: #ffffff;
 					opacity: 0.5;
 					transform: rotate(90deg);
 					right: -15.8rem;
@@ -135,6 +136,7 @@
 				top: -2.5rem;
 				right: -2rem;
 				z-index: 3;
+
 				& > img {
 					object-fit: cover;
 					width: 4.9rem;
@@ -145,20 +147,172 @@
 
 		&__img {
 			&-left {
+				width: 100%;
+				height: 100%;
+
 				& > img {
-					max-width: 23.9rem;
-					max-height: 23.9rem;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 			}
 
 			&-right {
 				position: relative;
 				z-index: 11;
+				width: 100%;
+				height: 100%;
+
 				& > img {
-					max-width: 23.9rem;
-					max-height: 23.9rem;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 			}
 		}
 	}
+}
+
+@media (max-width: 1680px) {
+
+	.posts {
+		padding: 7rem 0;
+		&-block {
+			width: 21.5rem;
+			height: 21.5rem;
+			&__large{
+				height: 44.7rem;
+				width: 44.7rem;
+			}
+		}
+		&-top{
+			&__text{
+				margin-bottom: 3.2rem;
+				&-subtitle{
+					margin-bottom: 1.6rem;
+				}
+				&-title{
+					& > h3{
+						font-size: 4rem;
+					}
+				}
+			}
+		}
+	}
+
+
+}
+@media (max-width: 1440px) {
+
+	.posts {
+		&-inner{
+
+		}
+		&-block {
+			width: 20rem;
+			height: 20rem;
+			&__large{
+				height: 40.7rem;
+				width: 40.7rem;
+			}
+		}
+
+	}
+
+
+}
+
+@media (max-width: 1280px) {
+
+	.posts {
+		&-inner{
+
+		}
+		&-block {
+			width: 18rem;
+			height: 18rem;
+			&__large{
+				height: 36.9rem;
+				width: 36.7rem;
+			}
+			&__circle-left{
+				&::before{
+					font-size: 9.5rem;
+					right: -10.8rem;
+					bottom: -21.5rem;
+				}
+			}
+		}
+		&-top{
+			&__text{
+				margin-bottom: 2.8rem;
+				&-subtitle{
+					margin-bottom: 1.2rem;
+				}
+				&-title{
+					& > h3{
+						font-size: 3.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.posts {
+		&-inner{
+			grid-template-areas:
+			"post-block-1 post-block-2 post-block-7"
+			"post-block-3 post-block-4 post-block-8";
+		}
+		&-block {
+			&__large{
+				display: none;
+			}
+			&__circle-left,
+			&__circle-right{
+				display: none;
+				&::before{
+					font-size: 9.5rem;
+					right: -10.8rem;
+					bottom: -21.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 666px) {
+
+	.posts {
+		&-top__text-subtitle{
+			& > p{
+				text-align: center;
+			}
+		}
+
+		&-inner{
+			grid-template-areas:
+			"post-block-1 post-block-2"
+			"post-block-3 post-block-4";
+		}
+		&-block {
+			width: 14rem;
+			height: 14rem;
+			&__large{
+				display: none;
+			}
+			&__right,
+			&__eight{
+				display: none;
+			}
+			&__circle-left{
+				display: none;
+			}
+		}
+	}
+
+
 }

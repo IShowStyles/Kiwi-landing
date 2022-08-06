@@ -14,5 +14,6 @@ const swiperReview = new Swiper('.reviews-content__bottom-con', {
 		480:{
 			spaceBetween: 70,
 		}
-	}
+	},
+
 });

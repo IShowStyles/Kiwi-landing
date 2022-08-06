@@ -56,8 +56,8 @@ $green-100: #F0F8F6;
 $white: #fff;
 
 %advent-700 {
-font-family: 'Advent Pro', sans-serif;
-font-weight: 700;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 700;
 }
 
 %bebasneue-700 {
@@ -160,31 +160,10 @@ html, body {
 
 	&--small {
 		max-width: 81.5rem;
-		padding: 0;
 	}
 
-	&--lg{
+	&--lg {
 		max-width: 183.7rem;
-		//padding: 7rem 0;
-	}
-}
-
-.logo {
-	&-wrap {
-		height: 10rem;
-		width: 19.1rem;
-	}
-
-	&-link {
-		margin-right: 10rem;
-	}
-}
-
-.hover-btn {
-	transition: all .3s linear .50ms;
-
-	&:hover {
-		background-color: rgba(1, 163, 164, 0.79);
 	}
 }
 
@@ -241,7 +220,7 @@ html, body {
 .verticalScroll::-webkit-scrollbar-track {
 	background: #74E6CF;
 	border: .2rem solid transparent;
-	background-clip:content-box;
+	background-clip: content-box;
 }
 
 .verticalScroll::-webkit-scrollbar-thumb {
@@ -250,44 +229,109 @@ html, body {
 	border-radius: 50px;
 }
 
-.reviews-slider__btn{
-	&-left{
+.reviews-slider__btn {
+	&-left {
 		width: 3rem;
 		height: 3rem;
 		margin-right: 1rem;
-		& > img{
+
+		& > img {
 			width: 100%;
 			height: 100%;
 		}
 	}
-	&-right{
+
+	&-right {
 		width: 3rem;
 		height: 3rem;
-		& > img{
+
+		& > img {
 			width: 100%;
 			height: 100%;
 		}
 	}
 }
 
-.line{
+.line {
 	width: 5rem;
 	height: 1.2rem;
-	& > svg{
+
+	& > svg {
 		width: 100%;
 		height: 100%;
 	}
 }
 
-.swiper-navigation{
+.swiper-navigation {
 	display: flex;
-	align-items:center ;
+	align-items: center;
 }
 
-.fancybox-button.fancybox-close-small{
+.fancybox-button.fancybox-close-small {
 	display: none;
 }
 
-.fancybox-content{
+.fancybox-inner {
+	overflow: hidden;
+}
+
+.fancybox-content {
 	padding: 0;
+}
+
+.hover-btn {
+	& > button {
+		border: .1rem solid transparent;
+	}
+
+	&:hover {
+		animation: all 3s ease-in-out;
+
+		& > a {
+			color: $green-600;
+		}
+
+		& > span {
+			color: $green-600;
+		}
+
+		& > button {
+			border: .1rem solid $green-600;
+			background-color: #fff;
+			color: $green-600;
+		}
+	}
+}
+
+.lock {
+	overflow: hidden
+}
+
+@keyframes showMenu {
+	0% {
+		transform: translateY(-250%);
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes hideMenu {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+
+	}
+
+	100% {
+		transform: translateY(-250%);
+		opacity: 0;
+		visibility: hidden;
+	}
 }

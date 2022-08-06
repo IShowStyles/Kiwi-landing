@@ -3,23 +3,7 @@
 		max-width: 114rem;
 	}
 
-	.proposition {
-		&-title {
-			margin-bottom: 3.6rem;
 
-			& > * {
-				font-size: 4.2rem;
-			}
-		}
-
-		&-btn {
-			padding: 1.9rem 6.7rem 1.6rem;
-		}
-
-		&-card {
-			max-width: 28rem;
-		}
-	}
 
 	.offer {
 		&-card {
@@ -78,34 +62,6 @@
 		}
 	}
 
-	.posts {
-		&-top {
-			&__text {
-				margin-bottom: 4.8rem;
-
-				&-title {
-					& > h3 {
-						font-size: 4rem;
-						line-height: 4.2rem;
-					}
-				}
-			}
-		}
-		&-inner {
-			grid-template-columns: repeat(2, minmax(19rem, 1fr)) minmax(37.5rem, 38.5rem) minmax(19rem, 1fr);
-			grid-template-rows: repeat(2, minmax(19rem, 1fr));
-		}
-
-		&-block {
-			&__large {
-				& > img {
-					max-width: 38.5rem;
-					height: 49rem;
-				}
-			}
-		}
-	}
-
 	.blog{
 		&-title{
 			margin-bottom: 4.6rem;
@@ -155,35 +111,7 @@
 	.container {
 		max-width: 110rem;
 	}
-	.proposition {
-		&-title {
-			margin-bottom: 3.6rem;
 
-			& > * {
-				font-size: 4rem;
-			}
-		}
-
-		&-inner {
-			margin-bottom: 3.5rem;
-		}
-
-		&-btn {
-			padding: 1.7rem 6.5rem 1.5rem;
-
-			& > * {
-				font-size: 2.5rem;
-			}
-		}
-
-		&-card {
-			max-width: 28rem;
-
-			&__wrap {
-				margin-bottom: 3.7rem;
-			}
-		}
-	}
 
 	.offer {
 		&-card {
@@ -341,27 +269,7 @@
 		max-width: 105rem;
 	}
 
-	.proposition {
-		&-title {
-			margin-bottom: 2.7rem;
 
-			& > * {
-				font-size: 4rem;
-			}
-		}
-
-		&-card {
-			max-width: 26rem;
-		}
-
-		&-btn {
-			padding: 1.4rem 4.9rem;
-
-			& > span {
-				font-size: 2.3rem;
-			}
-		}
-	}
 
 	.posts {
 		&-top {
@@ -466,28 +374,6 @@
 		max-width: 100rem;
 	}
 
-	.proposition {
-		&-title {
-			margin-bottom: 1.6rem;
-
-			& > * {
-				font-size: 3.4rem;
-			}
-		}
-
-		&-card {
-			max-width: 24rem;
-
-			&__title {
-				margin-bottom: 1.6rem;
-
-				& > span {
-					font-size: 2.2rem;
-				}
-			}
-		}
-
-	}
 
 	.offer {
 		&-card {
@@ -640,64 +526,7 @@
 		max-width: 90rem;
 	}
 
-	.proposition {
-		&-title {
-			margin-bottom: 1.2rem;
 
-			& > h2 {
-				font-size: 3.2rem;
-			}
-		}
-
-		&-inner {
-			margin-bottom: 2.8rem;
-		}
-
-		&-btn {
-			padding: 1.2rem 4rem;
-
-			& > span {
-				font-size: 2rem;
-			}
-		}
-
-		&-card {
-			max-width: 19rem;
-
-			&__wrap {
-				margin-bottom: 2.2rem;
-
-				&-left {
-					& > * {
-						display: block;
-						width: 100%;
-						right: 0;
-						object-fit: cover;
-
-						& > source {
-							//width: 23rem;
-						}
-					}
-				}
-			}
-
-			&__title {
-				margin-bottom: 1.4rem;
-
-				& > span {
-					font-size: 2rem;
-				}
-			}
-
-			&__text {
-				height: 10.7rem;
-
-				& > p {
-					font-size: 1.5rem;
-				}
-			}
-		}
-	}
 
 	.offer {
 		&-card {
@@ -838,11 +667,6 @@
 		max-width: 71rem;
 	}
 
-	.proposition {
-		&-card {
-			max-width: 17rem;
-		}
-	}
 
 	.offer {
 		&-inner {
@@ -967,37 +791,6 @@
 		max-width: 57.6rem;
 	}
 
-	.proposition {
-		&-inner {
-			flex-direction: column;
-		}
-
-		&-line__wrap {
-			display: block;
-		}
-
-		&-title {
-			margin-bottom: .6em;
-		}
-
-		&-card {
-			//max-width: 28.2rem;
-			display: flex;
-			flex-direction: column;
-
-			&__wrap {
-				margin-bottom: .6rem;
-
-				& > .proposition-card__wrap-inner {
-					height: 17rem;
-
-					& > img {
-						height: 17rem;
-					}
-				}
-			}
-		}
-	}
 
 
 	.offer {
