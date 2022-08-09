@@ -1,54 +1,66 @@
-.proposition{
+.proposition {
 	padding: 10rem 0;
-	&-inner{
-		display:flex;
+
+	&-inner {
+		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 5rem;
 	}
-	&-card{
+
+	&-card {
 		max-width: 20rem;
 		display: flex;
 		flex-direction: column;
-		&__wrap{
+
+		&__wrap {
 			margin-bottom: 4rem;
-			& .proposition-card__wrap-inner{
+
+			& .proposition-card__wrap-inner {
 				height: 20rem;
 				z-index: 11;
 				overflow: visible;
 				position: relative;
+
 				& > picture {
 					width: 100%;
 					height: 100%;
-					& > img{
+
+					& > img {
 						width: 100%;
 						height: 100%;
 						object-fit: cover;
 					}
 				}
 			}
-			&-left{
+
+			&-left {
 				& > * {
 					right: 2.7rem;
 				}
 			}
-			&-right{
+
+			&-right {
 				& > * {
 					left: 1.2rem;
 				}
 			}
+
 			& > picture {
 				display: block;
-				& > img{
+
+				& > img {
 					width: 100%;
 					height: 100%;
-					object-fit:contain;
+					object-fit: contain;
 				}
 			}
 
 		}
-		&__text{
+
+		&__text {
 			height: 7rem;
+
 			& > p {
 				text-align: center;
 				@extend %roboto-400;
@@ -58,9 +70,11 @@
 				height: 100%;
 			}
 		}
-		&__title{
+
+		&__title {
 			margin-bottom: 2rem;
-			& > *{
+
+			& > * {
 				display: block;
 				text-align: center;
 				@extend %bebasneue-700;
@@ -70,17 +84,20 @@
 			}
 		}
 	}
-	&-title{
+
+	&-title {
 		display: block;
 		text-align: center;
 		margin-bottom: 4rem;
+
 		& > * {
 			@extend %bebasneue-700;
 			font-size: 4.8rem;
 			line-height: 48px;
 		}
 	}
-	&-btn{
+
+	&-btn {
 		display: block;
 		display: inline-block;
 		position: relative;
@@ -112,27 +129,32 @@
 			color: $white;
 		}
 	}
-	&-line{
+
+	&-line {
 		display: flex;
-		flex-basis:100% ;
+		flex-basis: 100%;
 		background: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);
 		width: 90px;
 		height: 1px;
-		&__wrap{
+
+		&__wrap {
 			display: none;
 			position: relative;
 			padding-top: 30px;
 		}
-		&__img{
+
+		&__img {
 			display: flex;
 			justify-content: center;
 		}
-		&__left{
+
+		&__left {
 			position: absolute;
 			left: -6.2rem;
 			bottom: 0.4rem;
 		}
-		&__right{
+
+		&__right {
 			position: absolute;
 			right: -6.2rem;
 			bottom: 0.4rem;
@@ -140,7 +162,7 @@
 	}
 }
 
-@media (max-width: 1680px){
+@media (max-width: 1680px) {
 	.proposition {
 		&-title {
 			margin-bottom: 3.6rem;
@@ -151,7 +173,7 @@
 		}
 
 		&-btn {
-			& > a{
+			& > a {
 				padding: 1.9rem 6.7rem 1.6rem;
 
 			}
@@ -163,7 +185,7 @@
 	}
 }
 
-@media(max-width: 1440px){
+@media(max-width: 1440px) {
 	.proposition {
 		padding: 7rem 0;
 
@@ -197,7 +219,7 @@
 	}
 }
 
-@media(max-width: 1366px){
+@media(max-width: 1366px) {
 	.proposition {
 		&-title {
 			margin-bottom: 2.7rem;
@@ -221,7 +243,7 @@
 	}
 }
 
-@media(max-width: 1280px){
+@media(max-width: 1280px) {
 	.proposition {
 		&-title {
 			margin-bottom: 1.6rem;
@@ -247,7 +269,7 @@
 
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
 	.proposition {
 		padding: 5rem 0;
 
@@ -310,7 +332,7 @@
 	}
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
 	.proposition {
 		padding: 5rem 0 3rem 0;
 
@@ -321,7 +343,7 @@
 
 }
 
-@media(max-width: 666px){
+@media(max-width: 666px) {
 	.proposition {
 		&-inner {
 			flex-direction: column;

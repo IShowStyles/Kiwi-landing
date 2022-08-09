@@ -39,6 +39,7 @@
 				margin-right: 8rem;
 				max-width: 50.8rem;
 				height: 50.8rem;
+
 				& > img {
 					margin-left: -18rem;
 					width: 140%;
@@ -103,7 +104,7 @@
 				letter-spacing: 0.05em;
 			}
 
-			&-client{
+			&-client {
 				display: none;
 			}
 
@@ -118,7 +119,8 @@
 
 			&-text {
 				max-width: 56.5rem;
-				& > p{
+
+				& > p {
 					max-width: 56.5rem;
 					@extend %roboto-400;
 					font-size: 1.6rem;
@@ -168,33 +170,37 @@
 					max-width: 43.8rem;
 					margin-right: 8.5rem;
 					height: 46rem;
-					& > img{
+
+					& > img {
 						margin-left: -14rem;
 					}
 				}
 
 				&-wrap {
 					max-width: 60rem;
-					margin-bottom:5rem;
+					margin-bottom: 5rem;
 				}
 			}
 
 			&__top {
-				&-title{
+				&-title {
 					& > h6 {
 						font-size: 4rem;
 						line-height: 4rem;
 					}
 				}
-				&-subtitle{
+
+				&-subtitle {
 					line-height: 1.5rem;
 				}
 			}
+
 			&__item {
 				&-message {
-					padding-right:6rem;
+					padding-right: 6rem;
 				}
-				&-name{
+
+				&-name {
 					margin-bottom: 4rem;
 				}
 			}
@@ -215,9 +221,10 @@
 		max-width: 105rem;
 	}
 
-	.reviews{
+	.reviews {
 		padding: 7rem 0;
-		&-content{
+
+		&-content {
 			&__bottom {
 				&-img {
 					max-width: 40.8rem;
@@ -228,23 +235,27 @@
 						margin-left: -14rem;
 					}
 				}
+
 				&-wrap {
 					max-width: 57.5rem;
-					margin-bottom:4.5rem;
+					margin-bottom: 4.5rem;
 				}
 			}
+
 			&__top {
-				&-title{
-					& > h6{
+				&-title {
+					& > h6 {
 						font-size: 3.6rem;
 						line-height: 3.6rem;
 					}
 				}
-				&-subtitle{
+
+				&-subtitle {
 					line-height: 1.4rem;
 				}
 			}
-			&__item-message{
+
+			&__item-message {
 				padding-right: 5rem;
 			}
 		}
@@ -258,18 +269,20 @@
 		max-width: 100rem;
 	}
 
-	.reviews{
+	.reviews {
 		&-content {
 			&__bottom {
-				&-wrap{
-					max-width:50rem;
+				&-wrap {
+					max-width: 50rem;
 					margin-bottom: 3.6rem;
 				}
-				&-img{
+
+				&-img {
 					max-width: 36.8rem;
 					margin-right: 5.5rem;
 					height: 38rem;
-					& > img{
+
+					& > img {
 						margin-left: -2rem;
 						max-width: 116%;
 						max-height: 140%;
@@ -278,20 +291,24 @@
 
 				}
 			}
+
 			&__item {
 				&-name {
 					margin-bottom: 3.6rem;
 				}
-				&-message{
+
+				&-message {
 					padding-right: 4.4rem;
 				}
 			}
-			&__item-text{
+
+			&__item-text {
 				& > p {
 					font-size: 1.5rem;
 					line-height: 160%;
 				}
-				&:not(:last-child){
+
+				&:not(:last-child) {
 					margin-bottom: 1.8rem;
 				}
 			}
@@ -308,12 +325,15 @@
 
 	.reviews {
 		padding: 5rem 0;
+
 		&-content {
 			&__bottom {
 				justify-content: flex-start;
+
 				&-img {
 					margin-right: 0;
-					&> img {
+
+					& > img {
 						margin-left: -4rem;
 						padding-left: 2rem;
 						max-width: 100%;
@@ -321,25 +341,29 @@
 						object-fit: contain;
 					}
 				}
-				&-wrap{
+
+				&-wrap {
 					max-width: 35rem;
 					margin-bottom: 2rem;
 				}
 			}
-			&__item-text > p{
+
+			&__item-text > p {
 				font-size: 1.5rem;
 				line-height: 140%;
 			}
-			&__item-message{
+
+			&__item-message {
 				padding-right: 4rem;
 			}
-			&__top{
+
+			&__top {
 				padding-left: 4.5rem;
 			}
 		}
 	}
 
-	.verticalScroll{
+	.verticalScroll {
 		max-height: 20.1rem;
 		padding-right: 3rem;
 	}
@@ -352,24 +376,29 @@
 
 	.reviews {
 		padding: 5rem 0 3rem 0;
+
 		&-content {
 			&__bottom {
 				justify-content: center;
+
 				&-img {
 					display: none;
 				}
-				&-wrap{
+
+				&-wrap {
 					max-width: 47.5rem;
 				}
 			}
-			&__top{
+
+			&__top {
 				padding-left: 0;
 				margin-bottom: 3.5rem;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				&-title{
-					& > h6{
+
+				&-title {
+					& > h6 {
 						text-transform: lowercase;
 						font-family: 'Advent Pro', sans-serif;
 						font-weight: 700;
@@ -378,26 +407,30 @@
 					}
 				}
 			}
-			&__item-client{
+
+			&__item-client {
 				order: -1;
 				top: 0;
 				left: 9.2rem;
 				position: absolute;
 				display: block;
 			}
-			&__item-name{
+
+			&__item-name {
 				align-self: flex-start;
 				margin-bottom: .7rem;
 				height: 2.2rem;
 				width: 8.5rem;
 			}
-			&__item-score{
+
+			&__item-score {
 				width: 12rem;
 				justify-content: start;
 				align-self: flex-start;
 				margin-bottom: 2rem;
 			}
-			&__item-top{
+
+			&__item-top {
 				height: 10.5rem;
 				//box-sizing: content-box;
 				justify-content: flex-end;
@@ -405,13 +438,14 @@
 				position: relative;
 				flex-direction: column;
 			}
-			&__item-line{
+
+			&__item-line {
 				align-self: flex-start;
 			}
 		}
 	}
 
-	.swiper-navigation{
+	.swiper-navigation {
 		justify-content: center;
 	}
 }
@@ -422,34 +456,38 @@
 		max-width: 57.6rem;
 	}
 
-	.reviews{
+	.reviews {
 		&-content {
-			&__bottom{
-				&-wrap{
+			&__bottom {
+				&-wrap {
 					//display: flex;
 					//justify-content: center;
 					max-width: 28.5rem
 				}
 			}
+
 			&__item {
-				&-client{
+				&-client {
 					left: 0;
 				}
+
 				&-text {
 					//max-width: 44.5rem;
 					max-width: 100%;
-					& > p{
+
+					& > p {
 						max-width: 100%;
 					}
 				}
-				&-top{
+
+				&-top {
 					padding-left: 10rem;
 				}
 			}
 		}
 	}
 
-	.verticalScroll{
+	.verticalScroll {
 		padding-right: .5rem;
 	}
 }

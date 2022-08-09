@@ -27,6 +27,7 @@
 		height: 53.1rem;
 		transition: all .3s linear;
 		background: #fff;
+
 		&__img {
 			height: 21.8rem;
 			width: 100%;
@@ -117,6 +118,7 @@
 		right: 0;
 		left: 0;
 		z-index: 0;
+
 		& > svg {
 			width: 100%;
 			height: 17.8rem;
@@ -174,6 +176,7 @@
 
 	.blog {
 		padding: 7rem 0;
+
 		&-title {
 			margin-bottom: 4.2rem;
 
@@ -258,11 +261,15 @@
 
 @media(max-width: 1024px) {
 
-
 	.blog {
 		padding: 5rem 0;
+
 		&-title {
 			margin-bottom: 3.2rem;
+		}
+
+		&-bg {
+			display: none;
 		}
 
 		&-inner {
@@ -298,7 +305,7 @@
 
 @media(max-width: 768px) {
 
-	.blog-bg{
+	.blog-bg {
 		display: none;
 	}
 

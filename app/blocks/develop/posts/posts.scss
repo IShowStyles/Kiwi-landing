@@ -34,7 +34,7 @@
 		grid-template-areas:
 			"post-block-1 post-block-2 post-block-lg post-block-7"
 			"post-block-3 post-block-4 post-block-lg post-block-8";
-		grid-template-columns:repeat(2,minmax(1fr,19rem)) 2fr minmax(1fr,19rem);
+		grid-template-columns:repeat(2, minmax(1fr, 19rem)) 2fr minmax(1fr, 19rem);
 		grid-template-rows:repeat(2, 1fr);
 
 	}
@@ -42,6 +42,7 @@
 	&-block {
 		width: 23.9rem;
 		height: 23.9rem;
+
 		& > img {
 			display: block;
 			width: 100%;
@@ -79,6 +80,7 @@
 			grid-area: post-block-lg;
 			max-width: 47.7rem;
 			height: 48.7rem;
+
 			& > img {
 
 				width: 100%;
@@ -177,22 +179,27 @@
 
 	.posts {
 		padding: 7rem 0;
+
 		&-block {
 			width: 21.5rem;
 			height: 21.5rem;
-			&__large{
+
+			&__large {
 				height: 44.7rem;
 				width: 44.7rem;
 			}
 		}
-		&-top{
-			&__text{
+
+		&-top {
+			&__text {
 				margin-bottom: 3.2rem;
-				&-subtitle{
+
+				&-subtitle {
 					margin-bottom: 1.6rem;
 				}
-				&-title{
-					& > h3{
+
+				&-title {
+					& > h3 {
 						font-size: 4rem;
 					}
 				}
@@ -202,16 +209,19 @@
 
 
 }
+
 @media (max-width: 1440px) {
 
 	.posts {
-		&-inner{
+		&-inner {
 
 		}
+
 		&-block {
 			width: 20rem;
 			height: 20rem;
-			&__large{
+
+			&__large {
 				height: 40.7rem;
 				width: 40.7rem;
 			}
@@ -225,32 +235,38 @@
 @media (max-width: 1280px) {
 
 	.posts {
-		&-inner{
+		&-inner {
 
 		}
+
 		&-block {
 			width: 18rem;
 			height: 18rem;
-			&__large{
+
+			&__large {
 				height: 36.9rem;
 				width: 36.7rem;
 			}
-			&__circle-left{
-				&::before{
+
+			&__circle-left {
+				&::before {
 					font-size: 9.5rem;
 					right: -10.8rem;
 					bottom: -21.5rem;
 				}
 			}
 		}
-		&-top{
-			&__text{
+
+		&-top {
+			&__text {
 				margin-bottom: 2.8rem;
-				&-subtitle{
+
+				&-subtitle {
 					margin-bottom: 1.2rem;
 				}
-				&-title{
-					& > h3{
+
+				&-title {
+					& > h3 {
 						font-size: 3.6rem;
 					}
 				}
@@ -262,19 +278,22 @@
 @media (max-width: 1024px) {
 
 	.posts {
-		&-inner{
+		&-inner {
 			grid-template-areas:
 			"post-block-1 post-block-2 post-block-7"
 			"post-block-3 post-block-4 post-block-8";
 		}
+
 		&-block {
-			&__large{
+			&__large {
 				display: none;
 			}
+
 			&__circle-left,
-			&__circle-right{
+			&__circle-right {
 				display: none;
-				&::before{
+
+				&::before {
 					font-size: 9.5rem;
 					right: -10.8rem;
 					bottom: -21.5rem;
@@ -287,28 +306,32 @@
 @media (max-width: 666px) {
 
 	.posts {
-		&-top__text-subtitle{
-			& > p{
+		&-top__text-subtitle {
+			& > p {
 				text-align: center;
 			}
 		}
 
-		&-inner{
+		&-inner {
 			grid-template-areas:
 			"post-block-1 post-block-2"
 			"post-block-3 post-block-4";
 		}
+
 		&-block {
 			width: 14rem;
 			height: 14rem;
-			&__large{
+
+			&__large {
 				display: none;
 			}
+
 			&__right,
-			&__eight{
+			&__eight {
 				display: none;
 			}
-			&__circle-left{
+
+			&__circle-left {
 				display: none;
 			}
 		}
