@@ -79,7 +79,7 @@
 				text-align: center;
 				@extend %bebasneue-700;
 				font-size: 2.4rem;
-				line-height: 24px;
+				line-height: 100%;
 				letter-spacing: 0.05em;
 			}
 		}
@@ -93,7 +93,7 @@
 		& > * {
 			@extend %bebasneue-700;
 			font-size: 4.8rem;
-			line-height: 48px;
+			line-height: 4.8rem;
 		}
 	}
 
@@ -121,7 +121,7 @@
 			display: block;
 			text-transform: uppercase;
 			background-color: $green-600;
-			border-radius: 50px;
+			border-radius: 5rem;
 			padding: 2.2rem 8.4rem 1.9rem;
 			@extend %bebasneue-700;
 			font-size: 2.9rem;
@@ -134,13 +134,13 @@
 		display: flex;
 		flex-basis: 100%;
 		background: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);
-		width: 90px;
-		height: 1px;
+		width: 9rem;
+		height: .1rem;
 
 		&__wrap {
 			display: none;
 			position: relative;
-			padding-top: 30px;
+			padding-top: 3rem;
 		}
 
 		&__img {

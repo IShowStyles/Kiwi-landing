@@ -187,7 +187,7 @@ html, body {
 	width: 6.6rem;
 	height: .2rem;
 	background-color: $green-100;
-	border-radius: 10px;
+	border-radius: 1rem;
 
 	&:not(:last-child) {
 		margin-right: .8rem;
@@ -226,7 +226,7 @@ html, body {
 .verticalScroll::-webkit-scrollbar-thumb {
 	padding-left: .2rem;
 	background: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);
-	border-radius: 50px;
+	border-radius: 5rem;
 }
 
 .reviews-slider__btn {
