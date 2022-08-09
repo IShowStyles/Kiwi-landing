@@ -1,19 +1,17 @@
 $(document).ready(function () {
+	// $.fancybox.defaults.hideScrollbar = true;
 
-	$.fancybox.defaults.hideScrollbar = true;
-
-	$('[data-fancybox]').fancybox({
-
-		type: 'inline',
-		touch: false,
-		transitionEffect: "fade",
-		modal: false,
-
-
-
-	});
+	// $('#subscription-modal').fancybox({
+	//
+	// 	type: 'inline',
+	// 	touch: false,
+	// 	transitionEffect: "fade",
+	// 	modal: false,
+	//
+	// });
 
 	$("#Email-form").validate({
+
 		rules: {
 			email: {
 				required: true,
@@ -25,16 +23,20 @@ $(document).ready(function () {
 				minlength: jQuery.validator.format("Please, at least {0} characters are necessary")
 			},
 		},
-		submitHandler: function (form) {
+		submitHandler: function (form,event) {
+
 			$('#Email-form input').val('');
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 6750);
+			// setTimeout(function() {
+			// 	$.fancybox.close();
+			// }, 6750);
 			$.fancybox.open({
+
 				src: '#subscription-modal',
 				type: 'inline',
 				opts: {
-					touch: false
+					touch: false,
+					transitionEffect: "fade",
+					modal: false,
 				}
 			});
 		}

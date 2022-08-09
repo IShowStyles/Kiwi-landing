@@ -274,33 +274,14 @@ html, body {
 .fancybox-inner {
 	overflow: hidden;
 }
+.fancybox-content {
+	padding: 0!important;
+	border-radius: 2rem!important;
+	overflow: hidden!important;
+}
 
 .fancybox-content {
 	padding: 0;
-}
-
-.hover-btn {
-	& > button {
-		border: .1rem solid transparent;
-	}
-
-	&:hover {
-		animation: all 3s ease-in-out;
-
-		& > a {
-			color: $green-600;
-		}
-
-		& > span {
-			color: $green-600;
-		}
-
-		& > button {
-			border: .1rem solid $green-600;
-			background-color: #fff;
-			color: $green-600;
-		}
-	}
 }
 
 .lock {

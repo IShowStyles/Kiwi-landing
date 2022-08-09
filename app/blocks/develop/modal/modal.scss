@@ -1,6 +1,7 @@
 .modal {
 	border-radius: 2rem;
 	overflow: hidden;
+	max-width: 80.5rem;
 
 	&-inner {
 		display: flex;
@@ -9,7 +10,7 @@
 
 	&-img {
 		width: 21.4rem;
-		height: 35.1rem;
+		height: 40.1rem;
 		background-color: $green-100;
 		margin-right: 6.2rem;
 
@@ -23,7 +24,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 43rem;
+		padding: 8.5rem 6rem 8.5rem 0;
 
 		&__title {
 			margin-bottom: 2rem;
@@ -50,21 +51,22 @@
 			& > p {
 				@extend %bebasneue-700;
 				font-size: 2.4rem;
-				line-height: 2.4rem;
+				line-height: 100%;
 				text-align: center;
 				letter-spacing: 0.05em;
 			}
 		}
 
 		&__btn {
-			background-color: $green-600;
-			padding: 1.6rem 11.6rem;
-			border-radius: 5rem;
 
 			& > a {
+				display: block;
+				padding: 1.6rem 11.6rem;
+				border-radius: 5rem;
+				background-color: $green-600;
 				@extend %bebasneue-700;
 				font-size: 2.9rem;
-				line-height: 2.9rem;
+				line-height: 100%;
 				text-transform: uppercase;
 				color: #FFF;
 			}
@@ -74,9 +76,156 @@
 
 @media (max-width: 1024px) {
 
-	.modal{
-		&-inner{
+	.modal {
+		&-inner {
 
+		}
+
+		&-content {
+			max-width: 37.5rem;
+			padding: 4.5rem 6rem 4.5rem 0;
+			&__title {
+				& > h6 {
+					font-size: 3.2rem;
+				}
+
+				margin-bottom: 1.6rem;
+			}
+
+			&__line {
+				margin-bottom: 1.6rem;
+			}
+
+			&__description {
+				margin-bottom: 4rem;
+
+				& > p {
+					font-size: 2rem;
+				}
+			}
+
+			&__btn {
+
+				& > a {
+					padding: 1.4rem 9rem;
+					font-size: 2rem;
+				}
+			}
+		}
+
+		&-img {
+			width: 19.4rem;
+			height: 31.1rem;
+			margin-right: 4.2rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.modal {
+		max-width: 66rem;
+
+		&-inner {
+
+		}
+
+		&-content {
+			padding: 0;
+			&__title {
+				& > h6 {
+					font-size: 2.6rem;
+				}
+			}
+
+			&__btn {
+
+				& > a {
+					padding: 1.4rem 7rem;
+					font-size: 2rem;
+				}
+			}
+		}
+
+		&-img {
+			height: 28.1rem;
+			margin-right: 3.8rem;
+		}
+	}
+}
+
+@media (max-width: 666px) {
+
+	.modal {
+		min-width: 28rem;
+		max-width: 56rem;
+
+		&-inner {
+			max-width: 100%;
+			flex-direction: column;
+		}
+
+		&-content {
+			max-width: 100%;
+
+			&__title {
+				& > h6 {
+					font-size: 2rem;
+				}
+			}
+
+			&__description {
+				margin-bottom: 2.4rem;
+				font-size: 18px;
+				line-height: 22px;
+
+				& > p {
+					font-size: 1.6rem;
+				}
+			}
+
+			&__description {
+				margin-bottom: 4rem;
+				max-width: 32rem;
+
+				& > p {
+					font-size: 2rem;
+				}
+			}
+
+			&__btn {
+
+				width: 100%;
+
+
+				& > a {
+					border-bottom-right-radius: 2rem;
+					border-bottom-left-radius: 2rem;
+					border-top-right-radius: 0;
+					border-top-left-radius: 0;
+					margin: 0 auto;
+					display: block;
+					width: 100%;
+					text-align: center;
+					font-size: 2rem;
+				}
+			}
+		}
+
+		&-img {
+			border-top-right-radius: 2rem;
+			border-top-left-radius: 2rem;
+			width: 100%;
+			background: #F0F8F6;
+			height: 15rem;
+			margin-right: 0;
+			margin-bottom: 3rem;
+
+			& > img {
+				display: block;
+				margin: 0 auto;
+				width: 20rem;
+			}
 		}
 	}
 }

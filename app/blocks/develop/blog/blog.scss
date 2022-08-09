@@ -1,5 +1,6 @@
 .blog {
-	padding: 100px 0;
+	padding: 10rem 0;
+	position: relative;
 
 	&-title {
 		display: flex;
@@ -25,6 +26,7 @@
 		max-width: 38.7rem;
 		height: 53.1rem;
 		transition: all .3s linear;
+		background: #fff;
 		&__img {
 			height: 21.8rem;
 			width: 100%;
@@ -81,7 +83,7 @@
 			width: 100%;
 			justify-content: flex-end;
 
-			& > a  {
+			& > a {
 				border: .1rem solid transparent;
 				border-radius: 5rem;
 				padding: .8rem 2rem;
@@ -92,8 +94,9 @@
 				color: $white;
 				letter-spacing: 0.05em;
 				text-transform: uppercase;
-				transition:all .3s linear ;
-				&:hover{
+				transition: all .3s linear;
+
+				&:hover {
 					border: .1rem solid $green-600;
 					background-color: #fff;
 					color: $green-600;
@@ -105,6 +108,19 @@
 		&__wrap {
 			max-width: 100%;
 			padding: 4.2rem 4rem 4rem 4rem;
+		}
+	}
+
+	&-bg {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		left: 0;
+		z-index: 0;
+		& > svg {
+			width: 100%;
+			height: 17.8rem;
+			object-fit: cover;
 		}
 	}
 }
@@ -157,6 +173,7 @@
 
 
 	.blog {
+		padding: 7rem 0;
 		&-title {
 			margin-bottom: 4.2rem;
 
@@ -243,6 +260,7 @@
 
 
 	.blog {
+		padding: 5rem 0;
 		&-title {
 			margin-bottom: 3.2rem;
 		}
@@ -280,8 +298,13 @@
 
 @media(max-width: 768px) {
 
+	.blog-bg{
+		display: none;
+	}
 
 	.blog {
+		padding: 5rem 0 3rem 0;
+
 		&-inner {
 			flex-direction: column;
 			margin-bottom: 3rem;
@@ -310,12 +333,15 @@
 			max-width: 95%;
 			height: 51rem;
 			padding-left: 1rem;
-			&:nth-child(2){
-				padding-left: 1.2rem;
+
+			&:nth-child(2) {
+				padding-left: 2.7rem;
 			}
-			&:nth-child(3){
-				padding-left: 1.7rem;
+
+			&:nth-child(3) {
+				padding-left: 2.8rem;
 			}
+
 			&:not(:last-child) {
 				margin-bottom: 0;
 			}
