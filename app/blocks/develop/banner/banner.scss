@@ -1,6 +1,6 @@
 .banner {
 	padding: 10rem 0 4.4rem 0;
-
+	position: relative;
 	&-inner {
 		position: relative;
 	}
@@ -17,11 +17,11 @@
 	}
 
 	&-dashed {
-		width: 40.3rem;
-		height: 30.2rem;
+		width: 31rem;
+		height: 40rem;
 		position: absolute;
-		right: -30%;
-		top: -3rem;
+		right: 0;
+		bottom:0;
 
 		& > * {
 			object-fit: contain;
@@ -30,7 +30,7 @@
 		}
 	}
 
-	&-top___text {
+	&-top__text {
 		display: flex;
 		align-items: center;
 		margin-bottom: 2.4rem;
@@ -80,254 +80,57 @@
 		}
 	}
 
-	&-dashed {
-		width: 29.3rem;
-		height: 28.2rem;
-		position: absolute;
-		right: -20%;
-		top: -3rem;
-	}
-
 	&-steps {
 		width: 12.3rem;
 		height: 10.3rem;
 	}
 }
 
-@media (max-width: 1680px) {
-	.container {
-		max-width: 114rem;
-	}
-
+@media(max-width: 666px){
 	.banner {
-		&-bottom{
-			&__title {
-				& > h3 {
-					font-size: 8.5rem;
-					line-height: 8.5rem;
-					width: 90%;
-				}
-			}
-			&__subtitle{
-				& > span {
-					font-size: 6.8rem;
-				}
-			}
-
-		}
-
-		&-dashed {
-			transform: rotate(173deg) scale(1, -1);
-			right: -7%;
-			top: -5.5rem;
-			width: 35rem;
-			height: 30rem;
-		}
-
-		&-steps {
-			width: 9.3rem;
-			height: 6.3rem;
-			left: -10rem;
-			top: 25%;
-		}
-	}
-}
-
-@media (max-width: 1440px) {
-	.container {
-		max-width: 110rem;
-	}
-
-	.banner {
-		&-top___text {
-			margin-bottom: 2rem;
-		}
-
-		&-bottom {
-			&__title{
-				& > h3 {
-					font-size: 8.8rem;
-					line-height: 8.8rem;
-				}
-			}
-			&__subtitle{
-				& > span {
-					font-size: 6.8rem;
-					line-height: 10.2rem;
-				}
-			}
-		}
-
-		&-dashed {
+		padding: 13.5rem 0 7.5rem 0;
+		&-dashed{
 			display: none;
 		}
-
-		&-steps {
+		&-steps{
 			display: none;
 		}
-	}
-}
-
-@media(max-width: 1366px) {
-
-	.container {
-		max-width: 110rem;
-	}
-
-	.banner {
-		&-top___text {
-			margin-bottom: 2rem;
-		}
-
-		&-bottom {
-			&__title{
-				width: 100%;
-				& > h3 {
-					font-size: 7.5rem;
-					line-height: 7.5rem;
-				}
-			}
-			&__subtitle{
-				& > span {
-					font-size: 6rem;
-					line-height: 7rem;
-				}
-			}
-		}
-	}
-}
-
-@media(max-width: 1280px) {
-	.container {
-		max-width: 100rem;
-	}
-
-	.banner {
-		&-bottom {
-			&__title{
-				& > h3 {
-					font-size: 7.4rem;
-					line-height: 7.4rem;
-				}
-			}
-			&__subtitle{
-				& > span {
-					font-size: 5.5rem;
-					line-height: 7rem;
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 1024px) {
-
-	.container {
-		max-width: 90rem;
-	}
-
-	.banner {
-		&-top___text {
-			padding-left: 12rem;
-			margin-right: 0.8rem;
-		}
-		&-bottom{
-			&__title{
-				display: flex;
-				justify-content: center;
-				& > h3{
-				text-align: center;
-				font-size: 5.8rem;
-				line-height: 5.8rem;
-			}
-
-			}
-			&__subtitle{
-				& > span{
-					font-size: 4.5rem;
-					line-height: 6rem;
-				}
-			}
-		}
-	}
-}
-
-@media(max-width: 768px){
-	.container {
-		max-width: 71rem;
-	}
-
-	.banner {
-		&-top___text {
+		&-top__text {
 			display: flex;
 			flex-direction: column;
-			padding-left: 0;
-			margin-right: 0;
+			margin-bottom: 5rem;
 			&-line{
-				margin-bottom: 1.5rem;
+				margin-bottom: 2.5rem;
+			}
+			&-subtitle{
+				color:$green-600;
+				font-size: 3.5rem;
+				line-height: 4rem;
+				letter-spacing: 0.25em;
+				text-transform: uppercase;
 			}
 		}
 		&-bottom{
-			&__wrap{
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
 			&__title{
 				& > h3{
+					text-align: center;
 					width: 100%;
-					font-size: 3.2rem;
-					line-height: 3.2rem;
+					font-size: 8rem;
+					line-height: 8rem;
 				}
 			}
 			&__subtitle{
 				& > span{
-					width: 107%;
 					justify-content: center;
 					text-align: center;
-					font-size: 2.6rem;
-					line-height: 4.2rem;
+					font-size: 6rem;
+					line-height: 10.5rem;
 				}
 			}
 			&__img{
+				width: 100%;
+				text-align: center;
 				display: block;
-				width: 7.6rem;
-				height: 7.6rem;
-				& > img{
-					width: 100%;
-					height: 100%;
-				}
-			}
-		}
-	}
-}
-
-@media(max-width: 666px){
-	.container {
-		max-width: 57.6rem;
-	}
-
-	.banner {
-		&-top___text {
-			&-line{
-				margin-bottom: 1rem;
-			}
-		}
-		&-bottom{
-			&__title{
-				& > h3{
-					width: 100%;
-					font-size: 3.2rem;
-					line-height: 3.2rem;
-				}
-			}
-			&__subtitle{
-				& > span{
-					justify-content: center;
-					text-align: center;
-					font-size: 2.6rem;
-					line-height: 4.2rem;
-				}
 			}
 		}
 	}

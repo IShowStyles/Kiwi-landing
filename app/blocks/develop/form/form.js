@@ -1,14 +1,4 @@
 $(document).ready(function () {
-	// $.fancybox.defaults.hideScrollbar = true;
-
-	// $('#subscription-modal').fancybox({
-	//
-	// 	type: 'inline',
-	// 	touch: false,
-	// 	transitionEffect: "fade",
-	// 	modal: false,
-	//
-	// });
 
 	$("#Email-form").validate({
 
@@ -17,6 +7,9 @@ $(document).ready(function () {
 				required: true,
 				email: true,
 				minlength: 6,
+			},
+			details: {
+				required: ".form-email__input"
 			},
 			messages: {
 				email: "Please enter a valid email address",
@@ -41,6 +34,4 @@ $(document).ready(function () {
 			});
 		}
 	});
-
-
 });

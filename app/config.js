@@ -6,7 +6,7 @@
 module.exports = {
 
 	app: {
-		name: 'Demo',
+		name: 'Kiwi ECO',
 	},
 
 	use: {
@@ -19,7 +19,7 @@ module.exports = {
 		imagemin: ['png', 'jpg', 'svg', 'gif'],
 		sourcemaps: ['js', 'css'],
 		autoprefixer: ['last 3 versions', 'ie 10', 'ie 11'],
-		mainBundle: 'app', // название основного бандла проекта
+		mainBundle: 'app',
 		mainLevel: 'develop',
 		globalStyles:
 			['app/blocks/develop/app/assets/global.scss'],

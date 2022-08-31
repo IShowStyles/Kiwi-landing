@@ -136,7 +136,7 @@ q:before, q:after {
 	content: none;
 }
 
-table {
+c{
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -145,10 +145,14 @@ a {
 	text-decoration: none;
 }
 
-html, body {
+html {
+	font-size: 10px;
+}
+
+ body {
 	color: $black;
 	background-color: $white;
-	font-size: 10px;
+	font-size: 1.6rem;
 	line-height: 150%;
 	@extend %bebasneue-700;
 }
@@ -164,6 +168,10 @@ html, body {
 
 	&--lg {
 		max-width: 183.7rem;
+	}
+	&--posts{
+		max-width: 122rem;
+		padding: 0 1rem;
 	}
 }
 
@@ -315,5 +323,47 @@ html, body {
 		transform: translateY(-250%);
 		opacity: 0;
 		visibility: hidden;
+	}
+}
+
+@media(max-width: 1680px){
+	html {
+		font-size: 8.6px;
+	}
+}
+
+@media(max-width: 1440px){
+	html {
+		font-size: 8px;
+	}
+}
+
+@media(max-width: 1366px){
+	html {
+		font-size: 7.4px;
+	}
+}
+
+@media(max-width: 1280px){
+	html {
+		font-size: 6px;
+	}
+}
+
+@media(max-width: 1024px){
+	html {
+		font-size: 5.2px;
+	}
+}
+
+@media(max-width: 768px){
+	html {
+		font-size: 4px;
+	}
+}
+
+@media(max-width: 666px){
+	.container{
+		max-width: 144rem;
 	}
 }
