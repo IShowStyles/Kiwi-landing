@@ -22,7 +22,7 @@ module.exports = {
 		mainBundle: 'app',
 		mainLevel: 'develop',
 		globalStyles:
-			['app/blocks/develop/app/assets/global.scss'],
+			'app/blocks/develop/app/assets/vars.scss',
 		pugMap: false,
 		addVersions: true,
 	},
