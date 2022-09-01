@@ -1,23 +1,3 @@
-$(function () {
-
-	let	currentScroll = 0;
-	const header = $(".header-top");
-	const heightHeader = $(".header-top").outerHeight();
-	const defaultOffset = heightHeader * 2.5;
-	const scrollPosition = () => window.scrollY || document.documentElement.scrollTop;
-	const containClass = () => header.hasClass('header-fixed');
-	window.onscroll = function () {
-		if (scrollPosition() > currentScroll && !containClass() && scrollPosition() > defaultOffset) {
-			header.addClass('header-fixed');
-		} else if (scrollPosition() < currentScroll && containClass()) {
-			header.removeClass('header-fixed');
-		}
-
-		currentScroll = scrollPosition();
-	}
-
-});
-
 const menuElementList = document.querySelectorAll('.header-top__menu-left > ul > li');
 const toggleMenuElementList = menuElementList[1];
 let dropdown = document.querySelector('.header__dropdown');
