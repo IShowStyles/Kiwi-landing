@@ -75,7 +75,7 @@ module.exports = {
 		},
 
 		png: {
-			optimizationLevel: 5, // можно указать 0-7
+			optimizationLevel: 3, // можно указать 0-7
 			bitDepthReduction: true,
 			colorTypeReduction: true,
 			paletteReduction: true,

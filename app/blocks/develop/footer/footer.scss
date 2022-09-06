@@ -33,13 +33,13 @@
 			align-items: center;
 			justify-content: space-between;
 
-			&-project {
+			&_project {
 				@extend %roboto-400;
 				font-size: 1.2rem;
 				line-height: 1.4rem;
 			}
 
-			&-company {
+			&_company {
 				display: flex;
 				align-items: center;
 			}
@@ -47,14 +47,14 @@
 	}
 
 	&-inner__bottom {
-		&-text {
+		&_text {
 			@extend %roboto-400;
 			font-size: 1.2rem;
 			line-height: 150%;
 			margin-right: 1rem;
 		}
 
-		&-img {
+		&_img {
 			width: 3.8rem;
 			height: 3rem;
 
@@ -64,7 +64,7 @@
 			}
 		}
 
-		&-text {
+		&_text {
 			@extend %roboto-400;
 			font-size: 1.2rem;
 			line-height: 150%;
@@ -173,37 +173,36 @@
 	}
 }
 
-//++
 @media(max-width: 666px) {
 	.footer {
 		&::after {
-			bottom: 13.5rem;
+			bottom: 5.4rem;
 		}
 
 		&-logo {
-			width: 33.5rem;
-			height: 18rem;
+			width: 13.4rem;
+			height: 7.2rem;
 			order: -1;
-			margin-bottom: 16.5rem;
+			margin-bottom: 6.6rem;
 		}
 
 		&-inner {
-			padding: 8rem 0;
+			padding: 3.2rem 0;
 			flex-direction: column;
 
-			&__bottom-text {
-				margin-right: 4.25rem;
+			&__bottom_text {
+				margin-right: 1.7rem;
 
 				& > p {
-					font-size: 2.75rem;
+					font-size: 1.1rem;
 					line-height: 150%;
 				}
 			}
 		}
 
-		&-inner__bottom-project {
-			font-size: 2.75rem;
-			line-height: 4.25rem;
+		&-inner__bottom_project {
+			font-size: 1.1rem;
+			line-height: 1.7rem;
 		}
 
 
@@ -213,49 +212,49 @@
 
 		&-link__list > ul {
 			flex-direction: column;
-			margin-bottom: 5rem;
+			margin-bottom: 2rem;
 			& > li {
 				text-align: center;
 
 				&:not(:last-child) {
 					margin-right: 0;
-					margin-bottom: 5rem;
+					margin-bottom: 2rem;
 				}
 			}
 		}
 
 		&-link__list > ul {
 			& > li> a {
-				font-size: 4.5rem;
-				line-height: 4.5rem;
+				font-size: 1.8rem;
+				line-height: 1.8rem;
 			}
 		}
 
 		&-social__inner > ul > li > a > svg {
-			width: 7.5rem;
-			height: 7.5rem;
+			width: 3rem;
+			height: 3rem;
 		}
 
-		&-link__list--mr {
+		&-link__list_mr {
 			margin-right: 0;
-			margin-bottom: 7.5rem;
+			margin-bottom: 3rem;
 		}
 
-		&-social__inner-elem {
+		&-social__inner_elem {
 			& > a > svg {
-				width: 6.75rem;
-				height: 6.75rem;
+				width: 2.7rem;
+				height: 2.7rem;
 			}
 		}
 
-		&-inner__bottom-img {
-			width: 7.5rem;
-			height: 9.5rem;
+		&-inner__bottom_img {
+			width: 3rem;
+			height: 3.8rem;
 		}
 
-		&-inner__bottom-text {
-			font-size: 2.75rem;
-			line-height: 4.75rem;
+		&-inner__bottom_text {
+			font-size: 1.1rem;
+			line-height: 1.9rem;
 		}
 
 		&-circle__wrap {
@@ -263,6 +262,3 @@
 		}
 	}
 }
-
-
-

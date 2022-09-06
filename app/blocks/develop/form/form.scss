@@ -5,19 +5,19 @@
 
 	&-top {
 		&__title {
-			&-wrap {
+			&_wrap {
 				display: flex;
 				flex-wrap: wrap;
 				align-items: center;
 				margin-bottom: 3rem;
 			}
 
-			&-inner {
+			&_inner {
 				display: flex;
 				align-items: center;
 			}
 
-			&-text {
+			&_text {
 				width: 100%;
 				padding-left: 7rem;
 				margin-bottom: 2rem;
@@ -26,7 +26,7 @@
 	}
 
 	&-top__title {
-		&-text > h6 {
+		&_text > h6 {
 			@extend %roboto-700;
 			font-size: 1.4rem;
 			color: $green-600;
@@ -35,11 +35,11 @@
 			text-transform: uppercase;
 		}
 
-		&-line {
+		&_line {
 			margin-right: 2rem;
 		}
 
-		&-heading > p {
+		&_heading > p {
 			@extend %bebasneue-700;
 			color: #000;
 			font-size: 4.8rem;
@@ -48,14 +48,14 @@
 	}
 
 	&-top__box {
-		&-img {
+		&_img {
 			display: none;
 		}
 	}
 
 	&-title__wrap {
 
-		&-heading {
+		&_heading {
 			max-width: 111rem;
 			margin-bottom: 4rem;
 			justify-content: center;
@@ -212,26 +212,26 @@
 
 @media(max-width: 666px) {
 	.form {
-		&-title__wrap-heading {
+		&-title__wrap_heading {
 			max-width: 100%;
 			& > p {
 				width: 50%;
-				font-size: 8rem;
+				font-size: 3.2rem;
 				text-align: center;
 			}
 		}
 
-		&-top__title-heading {
+		&-top__title_heading {
 			width: 100%;
 
 			& > p {
 				text-align: center;
-				font-size: 6rem;
-				line-height: 7.25rem;
+				font-size: 2.4rem;
+				line-height: 2.9rem;
 			}
 		}
 
-		&-top__title-wrap {
+		&-top__title_wrap {
 			justify-content: center;
 
 			& > p {
@@ -239,29 +239,29 @@
 			}
 		}
 
-		&-top__title-line {
+		&-top__title_line {
 			order: -1;
 			margin-right: 0;
 		}
 
-		&-top__title-text {
+		&-top__title_text {
 			text-align: center;
 			padding-left: 0;
-			margin-bottom: 6.75rem;
+			margin-bottom: 2.7rem;
 
 			& > h6 {
-				font-size: 4rem;
-				line-height: 4.5rem;
+				font-size: 1.6rem;
+				line-height: 1.8rem;
 			}
 		}
 	}
 
 
 	.form {
-		&-top__box-img {
+		&-top__box_img {
 			display: block;
-			max-width: 92rem;
-			height: 49rem;
+			max-width: 36.8rem;
+			height: 19.6rem;
 
 			& > img {
 				width: 100%;
@@ -295,29 +295,30 @@
 			flex-direction: column;
 			background: transparent;
 			padding: 0;
-			width: 78rem;
-			height: 34.5rem;
+			width: 31.2rem;
+			height: 13.8rem;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 
 			&__submit {
 				display: block;
 				width: 100%;
-				max-height: 15rem;
+				max-height: 6rem;
 				padding-right: 0;
 
 				& > button {
-					border-radius: 12.5rem;
+					border-radius: 5rem;
 					width: 100%;
-					padding: 4.25rem 0 3.9rem 0;
-					font-size: 6rem;
+					padding: 1.7rem 0 1.5rem 0;
+					font-size: 2.4rem;
+					line-height: 2.4rem;
 				}
 			}
 		}
 	}
 
 	.form-email__input {
-		max-height: 15rem;
+		max-height: 6rem;
 		background: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);
 		height: 100%;
 		width: 100%;
@@ -325,7 +326,7 @@
 		max-width: 100%;
 
 		& > label {
-			font-size: 3.5rem;
+			font-size: 1.4rem;
 		}
 
 		& > input {
@@ -337,10 +338,10 @@
 	}
 
 	.form-subscribe__text {
+		display: none;
 		& > p {
 			text-align: center;
-			font-size: 3rem;
+			font-size: 1.2rem;
 		}
 	}
-
 }

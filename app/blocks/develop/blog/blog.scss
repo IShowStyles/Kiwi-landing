@@ -26,7 +26,6 @@
 	&-card {
 		border: .1rem solid $green-100;
 		max-width: 38.7rem;
-		height: 53.1rem;
 		transition: all .3s linear;
 		background: #fff;
 
@@ -51,8 +50,8 @@
 
 			}
 
-			&-mb {
-				margin-bottom: 2.4rem;
+			&_mb {
+				margin-bottom:3rem;
 			}
 		}
 	}
@@ -68,6 +67,7 @@
 				line-height: 150%;
 			}
 		}
+
 		&__line {
 			width: 6.0rem;
 			height: .7rem;
@@ -110,18 +110,24 @@
 			}
 
 		}
+
 		&__wrap {
 			max-width: 100%;
 			padding: 4.2rem 4rem 4rem 4rem;
 		}
 	}
 
-	&-pagination{
-		.swiper-pagination-bullet{
+	&-card__wrap_second{
+		padding: 3rem 4rem 4rem 4rem;
+	}
+
+	&-pagination {
+		.swiper-pagination-bullet {
 			display: block;
 			width: 6.6rem;
 			height: 0.4rem;
-			&:not(:last-child){
+
+			&:not(:last-child) {
 				margin-right: 2rem;
 			}
 		}
@@ -145,63 +151,74 @@
 @media(max-width: 666px) {
 
 	.blog {
-		&-bg{
+		&-bg {
 			display: none;
 		}
+
 		&-inner {
-			padding-bottom: 5rem;
+			padding-bottom: 2rem;
 			flex-direction: row;
 		}
 
 		&-card {
 			max-width: 95%;
-			height:96.5rem;
-			padding-left: 2rem;
+			padding-left: .8rem;
+
 			&:nth-child(2) {
-				padding-left: 5rem;
+				padding-left: 2rem;
 			}
 
 			&:nth-child(3) {
-				padding-left: 4.5rem;
+				padding-left: 1.8rem;
 			}
 
 			&:not(:last-child) {
 				margin-bottom: 0;
 			}
 		}
+
+		&-card__text{
+			margin-bottom: 7rem;
+		}
+
 		&-card {
-			&__img{
-				height: 40.5rem;
+			&__img {
+				height: 23rem;
 			}
-			&__wrap{
-				padding: 6.25rem 7.5rem 6.25rem 6.25rem ;
+
+			&__wrap {
+				padding: 2.5rem 3rem 2.5rem 2.5rem;
 			}
 		}
+
 		&-card {
-			&__question{
-				& > span{
-					font-size: 4.5rem;
-					line-height: 5.5rem;
+			&__question {
+				& > span {
+					font-size: 1.8rem;
+					line-height: 2.2rem;
 				}
-				& > p{
-					font-size: 4.5rem;
-					line-height: 5.5rem;
+
+				& > p {
+					font-size: 1.8rem;
+					line-height: 2.2rem;
 				}
 			}
-			&__text{
+
+			&__text {
 				& > p {
-					font-size: 4rem;
+					font-size: 1.6rem;
 					line-height: 150%;
 				}
 			}
 		}
-		&-card{
-			&__link{
+
+		&-card {
+			&__link {
 				& > a {
-					padding:2rem 5rem;
+					padding: .8rem 2rem;
 					background-color: #01A3A4;
-					font-size:3rem;
-					line-height: 3.5rem;
+					font-size: 1.2rem;
+					line-height: 1.4rem;
 					color: #fff;
 					letter-spacing: 0.05em;
 					text-transform: uppercase;
@@ -210,4 +227,3 @@
 		}
 	}
 }
-

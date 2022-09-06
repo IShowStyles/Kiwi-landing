@@ -35,11 +35,11 @@
 		align-items: center;
 		margin-bottom: 2.4rem;
 
-		&-line {
+		&_line {
 			margin-right: 1rem;
 		}
 
-		&-subtitle {
+		&_subtitle {
 			@extend %roboto-700;
 			color: $green-600;
 			font-size: 1.4rem;
@@ -88,7 +88,7 @@
 
 @media(max-width: 666px){
 	.banner {
-		padding: 13.5rem 0 7.5rem 0;
+		padding: 5.4rem 0 3.6rem 0;
 		&-dashed{
 			display: none;
 		}
@@ -98,14 +98,15 @@
 		&-top__text {
 			display: flex;
 			flex-direction: column;
-			margin-bottom: 5rem;
-			&-line{
-				margin-bottom: 2.5rem;
+			margin-bottom: 2rem;
+			&_line{
+				margin-right: 0;
+				margin-bottom: 1rem;
 			}
-			&-subtitle{
+			&_subtitle{
 				color:$green-600;
-				font-size: 3.5rem;
-				line-height: 4rem;
+				font-size: 1.2rem;
+				line-height: 1.4rem;
 				letter-spacing: 0.25em;
 				text-transform: uppercase;
 			}
@@ -115,16 +116,16 @@
 				& > h3{
 					text-align: center;
 					width: 100%;
-					font-size: 8rem;
-					line-height: 8rem;
+					font-size: 3.2rem;
+					line-height: 100%;
 				}
 			}
 			&__subtitle{
 				& > span{
 					justify-content: center;
 					text-align: center;
-					font-size: 6rem;
-					line-height: 10.5rem;
+					font-size: 2.6rem;
+					line-height: 4.2rem;
 				}
 			}
 			&__img{

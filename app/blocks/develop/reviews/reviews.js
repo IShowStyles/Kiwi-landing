@@ -1,11 +1,11 @@
-const swiperReview = new Swiper('.reviews-content__bottom-con', {
+const swiperReview = new Swiper('.reviews-content__bottom_con', {
 	speed: 400,
 	slidesPerView: 1,
 	slidesPerGroup: 1,
 	// spaceBetween: 120,
 	navigation: {
-		nextEl: '.reviews-slider__btn-right',
-		prevEl: '.reviews-slider__btn-left',
+		nextEl: '.reviews-slider__btn_right',
+		prevEl: '.reviews-slider__btn_left',
 	},
 	breakpoints:{
 		320:{

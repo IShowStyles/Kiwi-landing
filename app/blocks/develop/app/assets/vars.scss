@@ -162,14 +162,14 @@ body {
 	padding: 0 1rem;
 	margin: 0 auto;
 
-	&--small {
+	&_small {
 		max-width: 81.5rem;
 	}
 
-	&--lg {
+	&_lg {
 		max-width: 183.7rem;
 	}
-	&--posts{
+	&_posts{
 		max-width: 122rem;
 		padding: 0 1rem;
 	}
@@ -206,7 +206,7 @@ body {
 	}
 }
 
-.container--left {
+.container_left {
 	margin: 0 0 0 auto;
 	padding-right: 0;
 }
@@ -363,7 +363,11 @@ body {
 }
 
 @media(max-width: 666px){
+	html {
+		font-size: 10px;
+	}
+
 	.container{
-		max-width: 144rem;
+		max-width: 57.6rem;
 	}
 }

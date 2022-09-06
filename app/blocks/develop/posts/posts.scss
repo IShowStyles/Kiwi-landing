@@ -8,7 +8,7 @@
 		flex-direction: column;
 		margin-bottom: 5rem;
 
-		&-subtitle {
+		&_subtitle {
 			@extend %roboto-400;
 			color: $green-600;
 			font-size: 1.4rem;
@@ -17,7 +17,7 @@
 			margin-bottom: 2rem;
 		}
 
-		&-title {
+		&_title {
 			& > h3 {
 				@extend %bebasneue-700;
 				color: $black;
@@ -36,8 +36,8 @@
 
 	&-block {
 		position: relative;
-		width: 23.9rem;
-		height: 23.9rem;
+		width: 24rem;
+		height: 24rem;
 
 		& > img {
 			width: 100%;
@@ -45,7 +45,7 @@
 		}
 
 
-		&__circle-left {
+		&__circle_left {
 			position: absolute;
 			width: 6.6rem;
 			height: 6.6rem;
@@ -60,22 +60,33 @@
 	}
 }
 
+.posts-block{
+	& > a {
+		width: 100%;
+		height: 100%;
+		& > img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
 .posts-block {
 
-	&__img-left {
+	&__img_left {
 		width: 100%;
 		height: 100%;
 
-		& > img {
+		& > a > img {
 			width: 100%;
 		}
 	}
 
-	&__img-right {
+	&__img_right {
 		width: 100%;
 		height: 100%;
 
-		& > img {
+		&  > a  > img {
 			width: 100%;
 		}
 	}
@@ -83,20 +94,20 @@
 
 .posts-block {
 
-	&__circle-right {
+	&__circle_right {
 		position: absolute;
-		width: 4.9rem;
-		height: 4.9rem;
+		width: 5rem;
+		height: 5rem;
 		top: -2.4rem;
 		right: -2.4rem;
 
-		& > img {
+		&  > a  > img {
 			width: 100%;
 			height: 100%;
 		}
 	}
 
-	&__img-left {
+	&__img_left {
 		width: 100%;
 		height: 100%;
 
@@ -118,11 +129,11 @@
 	}
 
 	&__large {
-		width: 47.7rem;
-		height: 48.7rem;
+		width: 49rem;
+		height: 49rem;
 		margin-right: .9rem;
 
-		& > img {
+		&  > a  > img {
 			display: block;
 			height: 100%;
 		}
@@ -132,20 +143,22 @@
 
 @media (max-width: 666px) {
 	.posts {
-		&-top__text-subtitle {
+		&-top__text_subtitle {
 			& > p {
-				font-size: 4rem;
-				line-height: 4.5rem;
+				font-size: 1.6rem;
+				line-height: 1.8rem;
 				text-align: center;
 			}
 		}
-	}
-	&-top__text-title {
-		& > h3 {
-			font-size: 6rem;
-			line-height: 7.25rem;
+		&-top__text_title {
+			& > h3 {
+				font-size: 2.4rem;
+				line-height: 2.9rem;
+			}
 		}
 	}
+
+
 
 
 
@@ -161,16 +174,16 @@
 		}
 
 		&-block__col:first-child {
-			margin-right: 2.25rem;
+			margin-right: .9rem;
 		}
 	}
 
 	.posts-block {
-		width: 35rem;
-		height: 35rem;
+		width: 14rem;
+		height: 14rem;
 
 		&:not(:last-child) {
-			margin-bottom: 2.25rem;
+			margin-bottom: .9rem;
 		}
 
 		&__large {
@@ -182,9 +195,8 @@
 			display: none;
 		}
 
-		&__circle-left {
+		&__circle_left {
 			display: none;
 		}
 	}
 }
-
