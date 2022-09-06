@@ -9,7 +9,7 @@ const swiperReview = new Swiper('.reviews-content__bottom_con', {
 	},
 	breakpoints:{
 		320:{
-			spaceBetween: 100,
+			spaceBetween: 10,
 		},
 		480:{
 			spaceBetween: 70,

@@ -104,7 +104,7 @@
 }
 
 .offer-text {
-	width: 52rem;
+	max-width: 52rem;
 
 	&__top {
 		display: flex;
@@ -127,7 +127,6 @@
 
 .offer-text {
 	&__description {
-		width: 100%;
 
 		& > p {
 			@extend %roboto-400;
@@ -196,6 +195,7 @@
 @media(max-width: 666px) {
 	.offer {
 		&-text {
+			max-width: 57.6rem;
 			display:flex ;
 			align-items: center;
 			flex-direction: column;
@@ -217,7 +217,7 @@
 
 	.offer {
 		&-text__description {
-			width: 75%;
+			max-width: 57.6rem;
 			& > p {
 				text-align: center;
 				font-size: 1.4rem;
